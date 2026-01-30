@@ -79,17 +79,12 @@ Fix:
 Right Rotation on right child
 
 Left Rotation on root
-4. Comparison between AVL Trees and Red-Black Trees
-+-------------------+-------------------------+---------------------------+
-| Feature           | AVL Tree                | Red-Black Tree            |
-+-------------------+-------------------------+---------------------------+
-| Balance condition | Strictly balanced       | Loosely balanced          |
-| Height            | Smaller                 | Slightly larger           |
-| Search            | Faster                  | Slightly slower           |
-| Insert/Delete     | Slower (more rotations) | Faster (fewer rotations)  |
-| Rotations         | More frequent           | Less frequent             |
-| Use case          | Read-heavy applications | Write-heavy applications  |
-+-------------------+-------------------------+---------------------------+
+
+4. Compare AVL Trees with Red-Black Trees.
+
+AVL Trees and Red-Black Trees are both self-balancing binary search trees, but they differ in the way they maintain balance. AVL Trees are strictly balanced, meaning the height difference between the left and right subtrees of any node is at most one. Due to this strict balancing, AVL Trees have a smaller height and provide faster search operations.
+
+Red-Black Trees are loosely balanced and allow a greater height difference compared to AVL Trees. This results in a slightly taller tree, but insertion and deletion operations require fewer rotations, making them faster and more efficient for frequent updates.
 
 
 5.Why Java uses Red-Black Tree instead of AVL Tree in TreeMap
